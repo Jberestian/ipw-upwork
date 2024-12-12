@@ -1,0 +1,466 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+/* Header */
+/* Header */
+/* Header */
+.header {
+    background-color: #5e7181;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    position: relative; /* Allows centering the nav menu while keeping the logo on the left */
+}
+
+/* Logo */
+.header .logo-container {
+    flex: 0 0 auto; /* Prevent the logo from stretching */
+}
+
+.header .logo-container img {
+    width: 60px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    position: absolute;
+    left: 50%; /* Move to the center */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu ul li a:hover {
+    text-decoration: underline;
+    color: #f8b400;
+}
+
+.nav-menu ul li a.active {
+    color: #f8b400;
+    text-decoration: underline;
+}
+
+
+/* Contact Button */
+.contact-button-container {
+    margin-left: auto; /* Push the button to the far right */
+}
+
+.contact-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f8b400;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #f39c12; /* Slightly darker orange on hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Hero Section */
+/* Hero Section Container */
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center; /* Center hero content horizontally */
+    align-items: center; /* Align text and photo vertically */
+    text-align: left; /* Align text to the left */
+    padding:  5vh 0; /* Reduce vertical padding to 2% of viewport height */ 
+    padding-bottom: 10px; /* Add a small bottom padding for spacing */  
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between; /* Space between text and photo */
+    align-items: center; /* Align items vertically */
+    gap: 1vw; /* Minimal spacing between text and photo */
+    width: 700px; /* Match width of the photo grid container */
+    max-width: 700px; /* Constrain width for larger screens */
+}
+
+.hero-text {
+    flex: 1; /* Allow the text to take up the remaining space */
+    text-align: left; /* Center-align text */
+}
+
+.hero-photo img {
+    width: 10vw; /* Smaller photo size relative to viewport width */
+    height: 10vw; /* Maintain square aspect ratio */
+    max-width: 200px; /* Limit the maximum width */
+    max-height: 100px;
+    object-fit: cover; /* Ensure the image fits the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+/* Hero Text Styling */
+.hero-text {
+    flex: 1; /* Allow text to take up remaining space */
+    max-width: 500px; /* Constrain the text width */
+}
+
+.hero-text h1 {
+    font-size: 1.5vw; /* Smaller font size for "Danny Bailey" */
+    margin-bottom: 5px; /* Reduce spacing below the name */
+}
+
+.hero-text p {
+    font-size: 0.8vw; /* Smaller font size for the description */
+    margin-top: 5px;
+    color: #555;
+}
+
+
+/* Hero Photo Styling */
+.hero-photo img {
+    width: 300px; /* Set size for the photo */
+    height: 200px; /* Maintain square aspect ratio */
+    object-fit: cover; /* Ensure photo fits properly */
+}
+
+/* Centering the Hero Section on Small Screens */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stack text and photo vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .hero-photo img {
+        width: 20vw; /* Adjust size for smaller screens */
+        height: 20vw;
+        max-width: 150px; /* Limit maximum width */
+        max-height: 150px;
+        margin-bottom: 10px; /* Add spacing below the photo */
+    }
+
+    .hero-text h1 {
+        font-size: 2.5vw; /* Increase font size for smaller screens */
+    }
+
+    .hero-text p {
+        font-size: 1.2vw; /* Adjust font size for description */
+    }
+}
+
+
+/* Photo Grid */
+/* Container to center the grid */
+/* Container to center the grid on the page */
+.photo-grid-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the grid */
+    align-items: center; /* Vertically center the grid */
+    height: 100vh; /* Full viewport height to center the grid */
+    margin: 20px auto; /* Reduce top and bottom margin to 20px */
+    margin-top: 10px; /* Reduce space above the photo grid */ 
+}
+
+/* Photo Grid Styling */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(3, 1fr);   /* 3 equal rows */
+    gap: 5px; /* Space between images */
+    width: 800px; /* Make the grid larger */
+    height: 800px; /* Maintain the square shape */
+}
+
+/* Image Styling */
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fit nicely in their cells */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #2d3748;
+    color: white;
+    padding: 40px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-form {
+    width: 45%;
+    max-width: 400px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+
+/*BLOG*/
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin : auto;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.article-text {
+    flex: 1;
+}
+
+.article-text h3 {
+    font-size: 1rem;
+    color: #607d8b;
+    margin-bottom: 0.5rem;
+}
+
+.article-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-text p {
+    margin-bottom: 0.5rem;
+}
+
+.article-image {
+    flex: 1;
+    background-color: #b0bec5;
+    height: 200px;
+    border-radius: 5px;
+    
+}
+
+.view-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.view-more a {
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+
+/*DIVERS*/
+/* Général */
+
+  
+
+/*FOOTER*/
+footer {
+    background-color: #5e7181; /* Adjust color to match the design */
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .footer-left {
+    flex: 1;
+  }
+  
+  .footer-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left p {
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .footer-right {
+    flex: 1;
+  }
+  
+  .footer-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-right input,
+  .footer-right textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .footer-right textarea {
+    resize: none;
+    height: 200px;
+  }
+  
+  .footer-right button {
+    padding: 10px;
+    background-color: white;
+    color: #5e7181;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .footer-right button:hover {
+    padding : 10px;
+    background-color: orange;
+  }
+  
+  /* Center the container */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Full viewport height */
+    background-color: #f5f5f5; /* Light background for contrast */
+    margin: 0;
+}
+
+/* Style the card */
+.game-card {
+    background: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Spacing inside the card */
+    text-align: center; /* Center the content inside */
+    max-width: 400px; /* Limit the width */
+    width: 90%; /* Make it responsive */
+}
+
+/* Style the text */
+.game-card p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the input */
+.game-card input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Style the buttons */
+#partieEncours {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn.play {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn.abandon {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
