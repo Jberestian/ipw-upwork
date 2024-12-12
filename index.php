@@ -37,6 +37,8 @@
             <img src="images/photos/image-8.jpg" alt="Photo 9">
         </div>
     </section>
+        <div class="gallery-cv-btn"><a href="" class="cv-btn">Voir mon CV</a></div>
+
 </main>
 <?php include 'footer.php'; ?> <!-- Footer -->
 </body>
