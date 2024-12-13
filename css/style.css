@@ -77,7 +77,8 @@ body {
 }
 
 .contact-button,
-.cv-btn {
+.cv-btn,
+.view-more-btn {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -89,7 +90,8 @@ body {
 }
 
 .contact-button:hover,
-.cv-btn:hover {
+.cv-btn:hover,
+.view-more-btn:hover {
   background-color: #f39c12; /* Slightly darker orange on hover */
 }
 
@@ -310,6 +312,8 @@ button:hover {
 
 .article-text {
   flex: 1;
+  /* margin-right: 150px;
+  margin-left: 150px; */
 }
 
 .article-text h3 {
@@ -341,7 +345,6 @@ button:hover {
 
 .view-more a {
   text-decoration: none;
-  color: orangered;
   font-weight: bold;
 }
 

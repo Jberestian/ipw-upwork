@@ -44,18 +44,18 @@
     
      <!-- Article 4 -->
      <div class="article">
+        <div class="article-image"></div>
         <div class="article-text">
             <h3>Environnement</h3>
             <h2>Lorem ipsum dolor sit amet consectetur</h2>
             <p>22 juin 2024</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
         </div>
-        <div class="article-image"></div>
     </div>
 
     <!-- Voir plus d'articles -->
     <div class="view-more">
-        <a href="#">Voir plus d'articles</a>
+        <a href="#" class="view-more-btn">Voir plus d'articles</a>
     </div>
 </section>
 
