@@ -16,11 +16,12 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Danny Bailey</h1>
+                <h5 class="sub-title">Developpeur Web</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
             </div>
-            <div class="hero-photo">
-                <img src="images/photos/image-principale.avif" alt="Main Photo">
-            </div>
+            <img src="images/photos/image-principale.avif" alt="Main Photo" class="hero-img">
+            <!-- <div class="hero-photo">
+            </div> -->
         </div>
         <div class="social-block">
             <ul class="social-list">

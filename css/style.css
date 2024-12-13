@@ -142,7 +142,7 @@ body[data-theme="dark"] {
   align-items: center; /* Align items vertically */
   gap: 1vw; /* Minimal spacing between text and photo */
   width: 700px; /* Match width of the photo grid container */
-  max-width: 520px; /* Constrain width for larger screens */
+  max-width: 530px; /* Constrain width for larger screens */
 }
 
 .hero-text {
@@ -158,6 +158,11 @@ body[data-theme="dark"] {
   max-height: 100px;
   object-fit: cover; /* Ensure the image fits the container */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.hero-img {
+  width: 250px;
+  height: 170px;
 }
 
 /* Hero Text Styling */
@@ -188,6 +193,7 @@ body[data-theme="dark"] {
 
 .social-block {
   margin-left: -10px;
+  margin-top: -25px;
 }
 
 .social-list {
@@ -360,14 +366,14 @@ button:hover {
 .article {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 10rem;
   margin: auto;
   padding: 1rem;
   border-radius: 5px;
 }
 
 .article-text {
-  flex: 1;
+  flex: 0.5;
   /* margin-right: 150px;
   margin-left: 150px; */
 }
@@ -390,7 +396,7 @@ button:hover {
 .article-image {
   flex: 1;
   background-color: #b0bec5;
-  height: 200px;
+  height: 260px;
   border-radius: 5px;
 }
 
@@ -481,7 +487,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh; /* Full viewport height */
+  height: 50vh; /* Full viewport height */
   margin: 0;
 }
 
