@@ -14,7 +14,8 @@
     </nav>
     <div class="contact-button-container">
 
-    <button id="theme-toggle">Toggle Theme</button>
+    <button id="theme-toggle" class="toggle-btn">Toggle Theme</button>
+
 
         <a href="#footer" class="contact-button">Contact</a>
         <script>

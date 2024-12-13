@@ -7,14 +7,10 @@
 }
 
 /* Body */
-/* body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f8f8f8;
-} */
-
 /* Default (light mode) */
 body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   background-color: white;
   color: black;
   transition: background-color 0.3s, color 0.3s;
@@ -26,6 +22,18 @@ body[data-theme="dark"] {
   color: white;
 }
 
+/* dark mode button styles */
+.toggle-btn {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #5d7181;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  border: 1px solid #ffffff;
+  margin-right: 20px;
+}
 
 
 /* Header */
@@ -103,7 +111,8 @@ body[data-theme="dark"] {
 
 .contact-button:hover,
 .cv-btn:hover,
-.view-more-btn:hover {
+.view-more-btn:hover,
+.toggle-btn:hover {
   background-color: #f39c12; /* Slightly darker orange on hover */
 }
 
@@ -176,6 +185,10 @@ body[data-theme="dark"] {
 }
 
 /* social styles */
+
+.social-block {
+  margin-left: -10px;
+}
 
 .social-list {
   display: flex;
