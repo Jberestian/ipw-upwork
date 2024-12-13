@@ -7,15 +7,27 @@
 }
 
 /* Body */
-body {
+/* body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f8f8f8;
+} */
+
+/* Default (light mode) */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header */
-/* Header */
-/* Header */
+/* Dark mode */
+body[data-theme="dark"] {
+  background-color: black;
+  color: white;
+}
+
+
+
 /* Header */
 .header {
   background-color: #5e7181;

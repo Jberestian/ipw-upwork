@@ -59,23 +59,8 @@
     </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php include 'footer.php'; ?>
+
+<script src="./js/darkMode.js"></script>
 </body>
 </html>

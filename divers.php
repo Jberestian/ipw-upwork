@@ -24,5 +24,6 @@
     
     <?php include 'footer.php'; ?>
     <script src="js/nombreCache.js"></script>
+    <script src="./js/darkMode.js"></script>
   </body>
 </html>

@@ -77,6 +77,8 @@
 
 </main>
 <?php include 'footer.php'; ?> <!-- Footer -->
+
+<script src="./js/darkMode.js"></script>
 </body>
 </html>
 

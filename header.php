@@ -13,6 +13,9 @@
         </ul>
     </nav>
     <div class="contact-button-container">
+
+    <button id="theme-toggle">Toggle Theme</button>
+
         <a href="#footer" class="contact-button">Contact</a>
         <script>
         // Smooth scrolling for the "Contact" button
