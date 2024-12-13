@@ -17,12 +17,12 @@
             <p>22 juin 2024</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
         </div>
-        <div class="article-image"></div>
+        <div class="article-image-block"><img src="#" alt="" class="article-img"></div>
     </div>
     
     <!-- Article 2 -->
     <div class="article">
-        <div class="article-image"></div>
+        <div class="article-image-block"><img src="#" alt="" class="article-img"></div>
         <div class="article-text">
             <h3>Environnement</h3>
             <h2>Lorem ipsum dolor sit amet consectetur</h2>
@@ -39,12 +39,12 @@
             <p>22 juin 2024</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
         </div>
-        <div class="article-image"></div>
+        <div class="article-image-block"><img src="#" alt="" class="article-img"></div>
     </div>
     
      <!-- Article 4 -->
      <div class="article">
-        <div class="article-image"></div>
+        <div class="article-image-block"><img src="#" alt="" class="article-img"></div>
         <div class="article-text">
             <h3>Environnement</h3>
             <h2>Lorem ipsum dolor sit amet consectetur</h2>

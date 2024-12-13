@@ -9,7 +9,7 @@
 /* Body */
 /* Default (light mode) */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Source Sans Pro", ui-sans-serif, system-ui;
   line-height: 1.6;
   background-color: white;
   color: black;
@@ -148,7 +148,11 @@ body[data-theme="dark"] {
 .hero-text {
   flex: 1; /* Allow the text to take up the remaining space */
   text-align: left;
-  margin-bottom: 20px; /* Center-align text */
+  margin-bottom: 40px; /* Center-align text */
+}
+
+.sub-title {
+  margin-bottom: 10px;
 }
 
 .hero-photo img {
@@ -393,7 +397,7 @@ button:hover {
   margin-bottom: 0.5rem;
 }
 
-.article-image {
+.article-image-block {
   flex: 1;
   background-color: #b0bec5;
   height: 260px;
@@ -510,12 +514,12 @@ footer {
 }
 
 /* Style the input */
-.game-card input[type="text"] {
+.game-card select[type="text"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-size: 16px;
 }
 
@@ -523,6 +527,10 @@ footer {
 #partieEncours {
   display: flex;
   justify-content: space-between;
+}
+
+#message {
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -537,6 +545,7 @@ footer {
 .btn.play {
   background-color: #007bff;
   color: #fff;
+  margin-right: 15px;
 }
 
 .btn.abandon {

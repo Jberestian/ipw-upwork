@@ -67,14 +67,14 @@
             <img src="images/photos/image-1.jpg" alt="Photo 2">
             <img src="images/photos/image-2.jpg" alt="Photo 3">
             <img src="images/photos/image-3.jpg" alt="Photo 4">
-            <img src="images/photos/image-4.jpg" alt="Photo 5">
+            <img src="images/photos/image-8.jpg" alt="Photo 5">
             <img src="images/photos/image-5.jpg" alt="Photo 6">
             <img src="images/photos/image-6.jpg" alt="Photo 7">
             <img src="images/photos/image-7.jpg" alt="Photo 8">
             <img src="images/photos/image-8.jpg" alt="Photo 9">
         </div>
     </section>
-        <div class="gallery-cv-btn"><a href="" class="cv-btn">Voir mon CV</a></div>
+        <div class="gallery-cv-btn"><a href="./cv.php" class="cv-btn">Voir mon CV</a></div>
 
 </main>
 <?php include 'footer.php'; ?> <!-- Footer -->
