@@ -147,7 +147,8 @@ body[data-theme="dark"] {
 
 .hero-text {
   flex: 1; /* Allow the text to take up the remaining space */
-  text-align: left; /* Center-align text */
+  text-align: left;
+  margin-bottom: 20px; /* Center-align text */
 }
 
 .hero-photo img {
