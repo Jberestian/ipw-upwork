@@ -13,14 +13,7 @@
       <div class="game-card">
         <p>Trouvez le nombre caché entre 0 et 100<br> en 10 essais maximum</p>
         <label for="prop">Votre proposition : </label><br />
-        <select name="proposition" id="prop" type="text" value="">
-          <option value=""></option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <!-- <input type="text" id="prop" name="proposition" value="" /><br /> -->
+          <input type="number" id="prop" value="" step="1" name="proposition">
         <div id="message"></div>
         <div id="partieEncours">
           <button id="jouerBtn" class="btn play">Jouer</button>

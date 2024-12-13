@@ -514,7 +514,8 @@ footer {
 }
 
 /* Style the input */
-.game-card select[type="text"] {
+.game-card,
+input[type="number"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
