@@ -318,6 +318,17 @@ button:hover {
   background-color: darkorange;
 }
 
+/* CV styles */
+
+#etat-civil, #formation, #competences, #experiences {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.experiences-title, .competences-title, .formation-title, .etat-civil-title {
+  margin-bottom: 20px;
+}
+
 /*BLOG*/
 .articles {
   display: flex;
@@ -451,7 +462,6 @@ footer {
   justify-content: center;
   align-items: center;
   height: 40vh; /* Full viewport height */
-  background-color: #f5f5f5; /* Light background for contrast */
   margin: 0;
 }
 

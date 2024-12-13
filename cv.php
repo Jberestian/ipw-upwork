@@ -12,7 +12,7 @@
     <?php include 'header.php'; ?>
     <main>
       <section id="etat-civil">
-        <h1>Etat Civil</h1>
+        <h1 class="etat-civil-title">Etat Civil</h1>
         <img src="./images/maPhoto.png" />
         <p>Jane Doe</p>
         <p>20 place de l'Eglise</p>
@@ -21,7 +21,7 @@
         <p>jane.doe@univ-grenoble-alpes.com</p>
       </section>
       <section id="formation">
-        <h1>Formation</h1>
+        <h1 class="formation-title">Formation</h1>
         <dl>
           <dt>Master Spécialité Compétence Complémentaire en Informatique</dt>
           <dd>Université Joseph Fourier 2010–2012</dd>
@@ -32,7 +32,7 @@
         </dl>
       </section>
       <section id="competences">
-        <h1>Compétences Informatique</h1>
+        <h1 class="competences-title">Compétences Informatique</h1>
         <dl>
           <dt>Langages de Programmation</dt>
           <dd>Java, Swift, C++, Python, Scala</dd>
@@ -47,7 +47,7 @@
         </dl>
       </section>
       <section id="experiences">
-        <h1>Experiences profesionnelles</h1>
+        <h1 class="experiences-title">Experiences profesionnelles</h1>
         <p>à compléter.....</p>
       </section>
     </main>
