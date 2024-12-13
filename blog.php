@@ -10,7 +10,7 @@
 <?php include 'header.php'; ?>
 <section class="articles">
     <!-- Article 1 -->
-    <div class="article article-1">
+    <div class="article">
         <div class="article-text">
             <h3>Environnement</h3>
             <h2>Lorem ipsum dolor sit amet consectetur</h2>
@@ -21,7 +21,7 @@
     </div>
     
     <!-- Article 2 -->
-    <div class="article article-2">
+    <div class="article">
         <div class="article-image"></div>
         <div class="article-text">
             <h3>Environnement</h3>
@@ -32,7 +32,7 @@
     </div>
 
     <!-- Article 3 -->
-    <div class="article article-3">
+    <div class="article">
         <div class="article-text">
             <h3>Environnement</h3>
             <h2>Lorem ipsum dolor sit amet consectetur</h2>
@@ -43,7 +43,7 @@
     </div>
     
      <!-- Article 4 -->
-     <div class="article article-4">
+     <div class="article">
         <div class="article-image"></div>
         <div class="article-text">
             <h3>Environnement</h3>
