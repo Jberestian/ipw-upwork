@@ -35,7 +35,6 @@ body[data-theme="dark"] {
   margin-right: 20px;
 }
 
-
 /* Header */
 .header {
   background-color: #5e7181;
@@ -320,13 +319,33 @@ button:hover {
 
 /* CV styles */
 
-#etat-civil, #formation, #competences, #experiences {
+#etat-civil,
+#formation,
+#competences,
+#experiences {
   margin-bottom: 50px;
   text-align: center;
 }
 
-.experiences-title, .competences-title, .formation-title, .etat-civil-title {
+.experiences-title,
+.competences-title,
+.formation-title,
+.etat-civil-title {
   margin-bottom: 20px;
+}
+
+.etat-civil-text,
+.formation-text,
+.competences-text,
+.experiences-text {
+  font-size: 1rem;
+  color: #607d8b;
+  margin-bottom: 0.5rem;
+}
+
+.etat-civil-img {
+  width: 300px;
+  border-radius: 40px;
 }
 
 /*BLOG*/
