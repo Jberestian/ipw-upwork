@@ -97,7 +97,8 @@ body[data-theme="dark"] {
 
 .contact-button,
 .cv-btn,
-.view-more-btn {
+.view-more-btn,
+.play-again {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -111,7 +112,8 @@ body[data-theme="dark"] {
 .contact-button:hover,
 .cv-btn:hover,
 .view-more-btn:hover,
-.toggle-btn:hover {
+.toggle-btn:hover,
+.play-again:hover {
   background-color: #f39c12; /* Slightly darker orange on hover */
 }
 

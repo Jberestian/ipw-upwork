@@ -11,22 +11,26 @@ window.onload = function () {
   document.getElementById("finPartieBtn").onclick = abandonner;
 
   // Ajouter un gestionnaire d'événement pour la touche "Entrée"
-  document.getElementById("prop").addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-      event.preventDefault(); // Empêcher le comportement par défaut (si nécessaire)
-      jouer(); // Appeler la fonction "jouer" lorsque l'utilisateur appuie sur Entrée
-    }
-  });
+  document
+    .getElementById("prop")
+    .addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault(); // Empêcher le comportement par défaut (si nécessaire)
+        jouer(); // Appeler la fonction "jouer" lorsque l'utilisateur appuie sur Entrée
+      }
+    });
 };
 
 // Démarre une nouvelle partie
 function debuterPartie() {
   // Réinitialiser les variables
-  nombreCache = Math.floor(Math.random() * (borneMax - borneMin + 1)) + borneMin;
+  nombreCache =
+    Math.floor(Math.random() * (borneMax - borneMin + 1)) + borneMin;
   nbreCoupsJoues = 0;
 
   // Mettre à jour l'interface utilisateur
-  document.getElementById("message").textContent = "Nouvelle partie commencée ! Faites une proposition.";
+  document.getElementById("message").textContent =
+    "Nouvelle partie commencée ! Faites une proposition.";
   document.getElementById("prop").value = "";
   document.getElementById("prop").focus();
   document.getElementById("partieEncours").style.display = "block";
@@ -39,8 +43,9 @@ function jouer() {
 
   // Valider l'entrée utilisateur
   if (isNaN(guess) || guess < borneMin || guess > borneMax) {
-    document.getElementById("message").textContent =
-      `Veuillez entrer un nombre valide entre ${borneMin} et ${borneMax}.`;
+    document.getElementById(
+      "message"
+    ).textContent = `Veuillez entrer un nombre valide entre ${borneMin} et ${borneMax}.`;
     return;
   }
 
@@ -48,59 +53,50 @@ function jouer() {
 
   // Vérifier si la proposition est correcte
   if (guess < nombreCache) {
-    document.getElementById("message").textContent = "Trop petit. Essayez encore !";
-  } else if (guess > nombreCache) {
-    document.getElementById("message").textContent = "Trop grand. Essayez encore !";
-  } else {
     document.getElementById("message").textContent =
-      `Bravo ! Vous avez trouvé le nombre caché en ${nbreCoupsJoues} essais.`;
+      "Trop petit. Essayez encore !";
+  } else if (guess > nombreCache) {
+    document.getElementById("message").textContent =
+      "Trop grand. Essayez encore !";
+  } else {
+    document.getElementById(
+      "message"
+    ).textContent = `Bravo ! Vous avez trouvé le nombre caché en ${nbreCoupsJoues} essais.`;
     terminerPartie();
     return;
   }
 
   // Vérifier si le joueur a atteint le nombre maximum d'essais
   if (nbreCoupsJoues >= nbreCoupsMax) {
-    document.getElementById("message").textContent =
-      `Vous avez perdu. Le nombre caché était ${nombreCache}.`;
+    document.getElementById(
+      "message"
+    ).textContent = `Vous avez perdu. Le nombre caché était ${nombreCache}.`;
     terminerPartie();
   }
 }
 
 // Abandonner la partie
 function abandonner() {
-  document.getElementById("message").textContent =
-    `Partie abandonnée. Le nombre caché était ${nombreCache}.`;
+  document.getElementById(
+    "message"
+  ).textContent = `Partie abandonnée. Le nombre caché était ${nombreCache}.`;
   terminerPartie();
 }
 
-// Terminer la partie
 function terminerPartie() {
-  // Désactiver l'interface de jeu
-  document.getElementById("partieEncours").style.display = "none";
+  // Hide gameplay buttons
+  document.getElementById("jouerBtn").style.display = "none";
+  document.getElementById("finPartieBtn").style.display = "none";
+
+  // Show "Rejouer" button
+  const rejouerBtn = document.getElementById("rejouerBtn");
+  rejouerBtn.style.display = "inline-block";
+
+  // Handle "Rejouer" button click
+  rejouerBtn.onclick = function () {
+    rejouerBtn.style.display = "none";
+    document.getElementById("jouerBtn").style.display = "inline-block";
+    document.getElementById("finPartieBtn").style.display = "inline-block";
+    debuterPartie();
+  };
 }
-
-
-// light dark theme script
-
-  // document.addEventListener("DOMContentLoaded", () => {
-  //   const toggleButton = document.getElementById("theme-toggle");
-    
-  //   // Load saved theme or fallback to light
-  //   const currentTheme = localStorage.getItem("theme") || "light";
-  //   document.body.setAttribute("data-theme", currentTheme);
-
-  //   // Update button text based on the current theme
-  //   toggleButton.textContent = currentTheme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode";
-
-  //   // Toggle theme on button click
-  //   toggleButton.addEventListener("click", () => {
-  //     const newTheme = document.body.getAttribute("data-theme") === "dark" ? "light" : "dark";
-  //     document.body.setAttribute("data-theme", newTheme);
-
-  //     // Save theme to localStorage
-  //     localStorage.setItem("theme", newTheme);
-
-  //     // Update button text
-  //     toggleButton.textContent = newTheme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode";
-  //   });
-  // });
